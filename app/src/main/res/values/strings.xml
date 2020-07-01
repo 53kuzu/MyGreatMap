@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyGreatGoogleMap</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
