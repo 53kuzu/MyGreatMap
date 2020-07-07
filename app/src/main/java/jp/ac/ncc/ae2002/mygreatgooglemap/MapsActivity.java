@@ -17,7 +17,10 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import permissions.dispatcher.NeedsPermission;
@@ -89,6 +92,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng NCC = new LatLng(37.923194, 139.044655);
         mMap.addMarker(new MarkerOptions().position(NCC).title("Marker in NCC"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(NCC,  15));
+
+        LatLng italy = new LatLng(37.9256,139.0442);
+        mMap.addMarker(new MarkerOptions().position(italy).title("Marker in イタリア軒"));
     }
 
     //位置情報取得処理をスタート
