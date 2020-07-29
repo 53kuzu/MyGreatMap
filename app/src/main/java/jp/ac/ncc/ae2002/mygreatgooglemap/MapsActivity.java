@@ -95,6 +95,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         LatLng italy = new LatLng(37.9256,139.0442);
         mMap.addMarker(new MarkerOptions().position(italy).title("Marker in イタリア軒"));
+
+        LatLng  bigSwan = new LatLng(37.882572,139.059143);
+        mMap.addMarker(new MarkerOptions().position(bigSwan).title("Marker in ビッグスワン"));
     }
 
     //位置情報取得処理をスタート
